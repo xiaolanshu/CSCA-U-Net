@@ -1,6 +1,6 @@
 # CSCA-U-Net
 
-## enviroment
+## Enviroment
 
 you can run the following command:
 ```shell
