@@ -1,7 +1,7 @@
 # CSCA-U-Net
 
 [toc]
-
+You also can read [Chinese version](docs/README-CN.md)
 ## 1. Overview
 
 
