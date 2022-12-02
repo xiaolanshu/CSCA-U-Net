@@ -1,6 +1,12 @@
 # CSCA-U-Net
 
-[toc]
+* [CSCA-U-Net](#csca-u-net)
+   * [1. Overview](#1-overview)
+   * [2. Environment](#2-environment)
+   * [3. Datasets](#3-datasets)
+   * [4. How run](#4-how-run)
+   * [5. Acknowledge](#5-acknowledge)
+
 You also can read [Chinese version](docs/README-CN.md)
 ## 1. Overview
 
@@ -28,7 +34,7 @@ In this section, we provide all common datasets.
 
 ## 4. How run
 
-First, you need a pytorch environment. if you haven't, you can create a `enviroment` by [Environment](#2.Environment). 
+First, you need a pytorch environment. if you haven't, you can create a `enviroment` by [Environment](#2-Environment). 
 
 ## 5. Acknowledge
 
