@@ -1,2 +1,1 @@
 # Data Directory Structure
-jj
