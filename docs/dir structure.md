@@ -1,4 +1,5 @@
 # Data Directory Structure
+```shell
 .
 ├── data
 │   ├── 2018DSB
@@ -46,5 +47,5 @@
 ├── model
 ├── snapshots
 └── utils
-
+```
 46 directories
