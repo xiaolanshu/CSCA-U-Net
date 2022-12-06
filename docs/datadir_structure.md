@@ -1,1 +1,0 @@
-# Data Directory Structure
