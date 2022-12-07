@@ -1,39 +1,99 @@
-# CSCA-U-Net
+# CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation
 
-* [CSCA-U-Net](#csca-u-net)
-   * [1. Overview](#1-overview)
-   * [2. Environment](#2-environment)
-   * [3. Datasets](#3-datasets)
-   * [4. How run](#4-how-run)
-   * [5. Acknowledge](#5-acknowledge)
+- [CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation](#csca-u-net--a-channel-and-space-compound-attention-cnn-for-medical-image-segmentation)
+  * [1. Overview](#1-overview)
+  * [2. Environment](#2-environment)
+  * [3. Download Files](#3-download-files)
+    + [3.1 Datasets](#31-datasets)
+    + [3.2 The pth files](#32-the-pth-files)
+  * [4. How run](#4-how-run)
+  * [5. Acknowledge](#5-acknowledge)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 
 You also can read [Chinese version](docs/README-CN.md)
-## 1. Overview
+
+## 1. 概览
 
 
+## 2. 运行环境
 
-## 2. Environment
+你可以按照如下命令创建一个虚拟环境。(注意: 此虚拟环境名为'pytorch'，如果你的系统中已经有该名称，你应该更改`enviroment.yml`中的环境名称):
 
-你可以在shell中运行以下命令:
 ```shell
-conda env create -f enviroment.yml
+
 ```
 
-## 3. Datasets
+## 3. 数据文件
 
-对于我们所使用的公共数据集，可以根据以下链接进行下载. 
+### 3.1 数据集
 
-- Polyp Dataset (Include Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS, and CVC-300. From [PraNet](https://github.com/DengPingFan/PraNet)). If you are in China, you can access `Total` to download it. If you are not in China, you can access `TrainDataset` and `TestDataset` to obtain it:
-  - Total: [Aliyun](http://little-shu.com:5244/Aliyun/Datasets/Polyp%205%20Datasets.zip)
-  - TrainDataset: [Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing) 
-  - TestDataset: [Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)
-- 2018 Data Science Bowl: [Aliyun](http://little-shu.com:5244/Aliyun/Datasets/bowl.zip), [Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)
-- ISIC 2018 (original from [kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1), but I convert *.tiff to *.png): [Aliyun](http://little-shu.com:5244/Aliyun/Datasets/ISCI2018.zip), [Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link) 
+我们在这一章节提供了论文所使用的公共数据集. 
 
-## 4. How run
+- 息肉数据集 (包括 Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS, and CVC-300.) \[[From PraNet](https://github.com/DengPingFan/PraNet)\]:
+  - Total: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\], \[[Baidu pwd: 1111]( https://pan.baidu.com/s/1q5I2e2bbwXdW4evJdCAUpg?pwd=1111)\]
+  - TrainDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\] 
+  - TestDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\]
+- 2018 Data Science Bowl: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/1JUzWDQydjj83GbniRgstOQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
+- ISIC 2018 (原始的图片来自于 \[[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\], 不过我将原本的`.tiff`格式的图片转换成了`.png`): \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/1utewXZ8Rs-X5FbTtzOy7DQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
 
-First, you need a pytorch environment. if you haven't, you can create a `enviroment` by [Environment](#2-Environment). 
+###  3.2 训练好的模型
 
-## 5. Acknowledge
+\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/snapshots.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/15QcH5fBU4uU0w-X3xu24cw?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1GvMXm5fehYbMFfC1mV0wHy0rHk_35JUP?usp=share_link)\]
+
+### 3.3 训练好的预测图
+
+\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Predict_map.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/1KmCXEPkAx5x1QhEx-Utypg?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1VA6J9k5XdkanpkMh4IuXe6wg0OS0lUxq?usp=sharing)\]
+
+## 4. 如何运行
+
+### 4.1 运行环境
+
+首先，你需要有一个`pytorch`的环境，我使用的是`pytorch 1.10` , 不过使用较低版本的应该也是可以的，具体情况自行甄别。
+
+也可以使用以下命令，创建一个虚拟环境 (注意: 此虚拟环境名为`pytorch`，如果你的系统中已经有此名称的虚拟环境，你需要手动更改下`environment.yml`)：
+
+```shell
+conda env create -f docs/enviroment.yml
+```
+
+## 4.2 训练模型
+
+你可以直接运行以下的命令:
+
+```shell
+sh run.sh ### use stepLR
+sh run_cos.sh ### use CosineAnnealingLR 
+```
+
+如果你只想运行单个的数据集，可以注释掉`sh`文件中不相关的一部分，或者直接在命令行输入类似如下命令:
+
+```shell
+python Train.py --model_name CSCAUNet --epoch 121 --batchsize 16 --trainsize 352 --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --lr 0.0001 --train_path $dir/data/TrainDataset --test_path $dir/data/TestDataset/Kvasir/  # you need replace ur truely Datapath to $dir.
+```
+
+## 4.3 测试模型并生成预测图片
+
+如果你使用了`sh` 文件进行训练，它会在训练完成后进行测试。
+
+如果你使用了`python`命令进行训练，你也可以注释掉`sh`文件中有关训练的部分，或者直接在命令行输入类似如下命令:
+
+```shell
+python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --test_path $dir/data/TestDataset
+```
+
+### 4.3 评估模型
+
+- 如果是评估息肉数据集，你可以使用`eval`中的`matlab`代码，或者使用 \[[UACANet](https://github.com/plemeri/UACANet)\] 提供的评估代码。
+- 如果是其他的数据集，你可以使用`evaldata`中的代码。
+- 之所以使用不同的评估代码，是因为要与在数据集上做实验的其它论文在评估时使用相同的方法。
+
+## 5. 引用
 
 
+
+## 6. 致谢
+
+- 感谢[PraNet](https://github.com/DengPingFan/PraNet)
