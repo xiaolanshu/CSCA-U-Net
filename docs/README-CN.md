@@ -21,10 +21,9 @@
   * [4. Result](#4-result)
   * [5. 引用](#5---)
   * [6. 致谢](#6---)
-  * [7. Contact](#7-contact)
+  * [7. 联系方式](#7-----)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ---
 
