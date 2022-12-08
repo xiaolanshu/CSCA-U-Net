@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation](#csca-u-net--a-channel-and-space-compound-attention-cnn-for-medical-image-segmentation)
+  * [Table of Contents](#table-of-contents)
   * [1. 概览](#1---)
     + [Abstract](#abstract)
   * [2. 数据文件](#2-----)
@@ -19,6 +20,7 @@
   * [4. Result](#4-result)
   * [5. 引用](#5---)
   * [6. 致谢](#6---)
+  * [7. Contact](#7-contact)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -124,3 +126,10 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 ## 6. 致谢
 
 - 本文的很多训练策略、数据集和评估方法都基于 [PraNet](https://github.com/DengPingFan/PraNet)。我对范登平博士等作者的开源精神表示钦佩，并非常感谢`PraNet`这项工作提供到的帮助。
+
+## 7. Contact
+
+- 📫 reach me for email: vegas_tyler@outlook.com
+
+- <img src="https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/qq.svg" width="20" height="20">reach me for QQ: 872845991
+
