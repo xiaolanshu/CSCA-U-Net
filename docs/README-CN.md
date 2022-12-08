@@ -134,9 +134,8 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 
 - 本文的很多训练策略、数据集和评估方法都基于 [PraNet](https://github.com/DengPingFan/PraNet)。我对范登平博士等作者的开源精神表示钦佩，并非常感谢`PraNet`这项工作提供到的帮助。
 
-## 7. Contact
+## 7. 联系方式
 
-- 📫 reach me for email: vegas_tyler@outlook.com
+- 📫 Email: vegas_tyler@outlook.com
 
-- <img src="https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/qq.svg" width="20" height="20">reach me for QQ: 872845991
-
+- <img src="https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/qq.svg" width="20" height="20"> QQ: 872845991
