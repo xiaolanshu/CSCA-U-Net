@@ -1,3 +1,4 @@
+<script src="https://kit.fontawesome.com/7c2ad9fa75.js" crossorigin="anonymous"></script>
 # CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation
 
 
@@ -109,3 +110,4 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 - 📫 reach me for email:vegas_tyler@outlook.com
 
 - <i class="fab fa-qq"></i> reach me for QQ: 872845991
+
