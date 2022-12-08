@@ -26,9 +26,6 @@
 
 ---
 
-
-You also can read [Chinese version](docs/README-CN.md)
-
 ## 1. 概览
 
 ![image-architecture](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/image-20221208100223315.png)
