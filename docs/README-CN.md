@@ -18,12 +18,13 @@
     + [3.2 训练模型](#32-----)
     + [3.3 测试模型并生成预测图片](#33------------)
     + [3.4 评估模型](#34-----)
-  * [4. Result](#4-result)
+  * [4. 结果](#4---)
   * [5. 引用](#5---)
   * [6. 致谢](#6---)
   * [7. 联系方式](#7-----)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ---
 
@@ -107,7 +108,7 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 - 如果是其他的数据集，你可以使用`evaldata`中的代码。
 - 之所以使用不同的评估代码，是因为要与在数据集上做实验的其它论文在评估时使用相同的方法。
 
-## 4. Result
+## 4. 结果
 - Polyp Datasets
 	![20221208101511](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101511.png)
 	
