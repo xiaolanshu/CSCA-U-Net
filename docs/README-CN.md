@@ -1,30 +1,8 @@
 # CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation
 
-- [CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation](#csca-u-net--a-channel-and-space-compound-attention-cnn-for-medical-image-segmentation)
-  * [1. Overview](#1-overview)
-  * [2. Environment](#2-environment)
-  * [3. Download Files](#3-download-files)
-    + [3.1 Datasets](#31-datasets)
-    + [3.2 The pth files](#32-the-pth-files)
-  * [4. How run](#4-how-run)
-  * [5. Acknowledge](#5-acknowledge)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
-
 You also can read [Chinese version](docs/README-CN.md)
 
 ## 1. 概览
-
-
-## 2. 运行环境
-
-你可以按照如下命令创建一个虚拟环境。(注意: 此虚拟环境名为'pytorch'，如果你的系统中已经有该名称，你应该更改`enviroment.yml`中的环境名称):
-
-```shell
-
-```
 
 ## 3. 数据文件
 
@@ -33,19 +11,19 @@ You also can read [Chinese version](docs/README-CN.md)
 我们在这一章节提供了论文所使用的公共数据集. 
 
 - 息肉数据集 (包括 Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS, and CVC-300.) \[[From PraNet](https://github.com/DengPingFan/PraNet)\]:
-  - Total: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\], \[[Baidu pwd: 1111]( https://pan.baidu.com/s/1q5I2e2bbwXdW4evJdCAUpg?pwd=1111)\]
+  - Total: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\], \[[Baidu]( https://pan.baidu.com/s/1q5I2e2bbwXdW4evJdCAUpg?pwd=1111)\]
   - TrainDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\] 
   - TestDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\]
-- 2018 Data Science Bowl: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/1JUzWDQydjj83GbniRgstOQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
-- ISIC 2018 (原始的图片来自于 \[[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\], 不过我将原本的`.tiff`格式的图片转换成了`.png`): \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/1utewXZ8Rs-X5FbTtzOy7DQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
+- 2018 Data Science Bowl: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Baidu](https://pan.baidu.com/s/1JUzWDQydjj83GbniRgstOQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
+- ISIC 2018 (原始的图片来自于 \[[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\], 不过我将原本的`.tiff`格式的图片转换成了`.png`): \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Baidu](https://pan.baidu.com/s/1utewXZ8Rs-X5FbTtzOy7DQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
 
 ###  3.2 训练好的模型
 
-\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/snapshots.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/15QcH5fBU4uU0w-X3xu24cw?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1GvMXm5fehYbMFfC1mV0wHy0rHk_35JUP?usp=share_link)\]
+\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/snapshots.zip)\], \[[Baidu](https://pan.baidu.com/s/15QcH5fBU4uU0w-X3xu24cw?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1GvMXm5fehYbMFfC1mV0wHy0rHk_35JUP?usp=share_link)\]
 
 ### 3.3 训练好的预测图
 
-\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Predict_map.zip)\], \[[Baidu pwd: 1111](https://pan.baidu.com/s/1KmCXEPkAx5x1QhEx-Utypg?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1VA6J9k5XdkanpkMh4IuXe6wg0OS0lUxq?usp=sharing)\]
+\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Predict_map.zip)\], \[[Baidu](https://pan.baidu.com/s/1KmCXEPkAx5x1QhEx-Utypg?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1VA6J9k5XdkanpkMh4IuXe6wg0OS0lUxq?usp=sharing)\]
 
 ## 4. 如何运行
 
@@ -59,7 +37,7 @@ You also can read [Chinese version](docs/README-CN.md)
 conda env create -f docs/enviroment.yml
 ```
 
-## 4.2 训练模型
+### 4.2 训练模型
 
 你可以直接运行以下的命令:
 
@@ -74,7 +52,7 @@ sh run_cos.sh ### use CosineAnnealingLR
 python Train.py --model_name CSCAUNet --epoch 121 --batchsize 16 --trainsize 352 --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --lr 0.0001 --train_path $dir/data/TrainDataset --test_path $dir/data/TestDataset/Kvasir/  # you need replace ur truely Datapath to $dir.
 ```
 
-## 4.3 测试模型并生成预测图片
+### 4.3 测试模型并生成预测图片
 
 如果你使用了`sh` 文件进行训练，它会在训练完成后进行测试。
 
@@ -84,7 +62,7 @@ python Train.py --model_name CSCAUNet --epoch 121 --batchsize 16 --trainsize 352
 python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --test_path $dir/data/TestDataset
 ```
 
-### 4.3 评估模型
+### 4.4 评估模型
 
 - 如果是评估息肉数据集，你可以使用`eval`中的`matlab`代码，或者使用 \[[UACANet](https://github.com/plemeri/UACANet)\] 提供的评估代码。
 - 如果是其他的数据集，你可以使用`evaldata`中的代码。
@@ -96,4 +74,4 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 
 ## 6. 致谢
 
-- 感谢[PraNet](https://github.com/DengPingFan/PraNet)
+- 本文的很多训练策略、数据集和评估方法都基于 [PraNet](https://github.com/DengPingFan/PraNet)。我对范登平博士等作者的开源精神表示钦佩，并非常感谢`PraNet`这项工作提供到的帮助。
