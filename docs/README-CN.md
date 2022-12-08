@@ -4,6 +4,12 @@ You also can read [Chinese version](docs/README-CN.md)
 
 ## 1. 概览
 
+![image-architecture](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/image-20221208100223315.png)
+
+### Abstract
+
+Image segmentation is one of the vital steps in medical image analysis. A large number of methods based on convolutional neural networks have emerged, which can extract abstract features from multiple-modality medical images, learn valuable information that is difficult to recognize by humans, and obtain more reliable results than traditional image segmentation approaches. U-Net, due to its simple structure and excellent performance, is widely used in medical image segmentation. In this paper, to further improve the performance of U-Net, we propose a channel and space compound attention (CSCA) convolutional neural network, abbreviated CSCA U-Net, which increases the network depth and employs a double squeeze-and-excitation (DSE) block in the bottleneck layer to enhance feature extraction and obtain more high-level semantic features. Moreover, the characteristics of the proposed method are three-fold: (1) channel and space compound attention (CSCA) block, (2) cross-layer feature fusion (CLFF), and (3) deep supervision (DS). Extensive experiments on several available medical image datasets, including Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS, CVC-T, 2018 Data Science Bowl (2018 DSB), ISIC 2018 Challenge, and JSUAH-Cerebellum, show that CSCA U-Net achieves competitive results and significantly improves the generalization performance.
+
 ## 3. 数据文件
 
 ### 3.1 数据集
@@ -68,10 +74,28 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 - 如果是其他的数据集，你可以使用`evaldata`中的代码。
 - 之所以使用不同的评估代码，是因为要与在数据集上做实验的其它论文在评估时使用相同的方法。
 
-## 5. 引用
+## 5. Result
+- Polyp Datasets
+	![20221208101511](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101511.png)
+	
+	![20221208101543](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101543.png)
+
+- 2018 DSB
+	![](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101622.png)
+
+- ISIC 2018
+	![](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101638.png)
+
+- JSUAH-Cerebellum 
+	![20221208101600](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101600.png)
+
+- Qualitative Results
+	![Qualitative](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101024.png)
+
+## 6. 引用
 
 
 
-## 6. 致谢
+## 7. 致谢
 
 - 本文的很多训练策略、数据集和评估方法都基于 [PraNet](https://github.com/DengPingFan/PraNet)。我对范登平博士等作者的开源精神表示钦佩，并非常感谢`PraNet`这项工作提供到的帮助。
