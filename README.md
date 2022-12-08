@@ -8,6 +8,8 @@
 - [CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation](#csca-u-net--a-channel-and-space-compound-attention-cnn-for-medical-image-segmentation)
   * [Table of Contents](#table-of-contents)
   * [1. Overview](#1-overview)
+    + [Papers](#papers)
+    + [Architecture](#architecture)
     + [Abstract](#abstract)
   * [2. Data Files](#2-data-files)
     + [2.1 Datasets](#21-datasets)
@@ -25,6 +27,7 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+
 ---
 
 
@@ -33,6 +36,12 @@
 **You also can read [Chinese version](docs/README-CN.md)**
 
 ## 1. Overview
+
+### Papers
+
+Waiting results.
+
+### Architecture
 
 ![image-architecture](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/image-20221208100223315.png)
 
