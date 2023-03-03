@@ -26,7 +26,7 @@ parser.add_argument('--train_save', type=str,default='')
 for _data_name in ['test','CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
     opt = parser.parse_args()
     targetdir=os.listdir(opt.test_path)
-    if(_data_name not in dir):
+    if(_data_name not in targetdir):
         continue
 
     data_path = os.path.join(opt.test_path,_data_name)
