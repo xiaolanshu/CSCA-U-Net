@@ -31,7 +31,7 @@
 
 ### 论文
 
-正在等待结果...
+我们的论文"CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation" 发表在 Artificial Intelligence in Medicine.(详情请看, [papers](https://www.sciencedirect.com/science/article/abs/pii/S0933365724000423))
 
 ### 整体架构
 

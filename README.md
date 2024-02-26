@@ -40,7 +40,7 @@
 
 ### Papers
 
-Waiting results.
+This repository provides code for our paper "CSCA U-Net: A Channel and Space Compound Attention CNN for Medical Image Segmentation" accepted for Publication at Artificial Intelligence in Medicine.([papers](https://www.sciencedirect.com/science/article/abs/pii/S0933365724000423))
 
 ### Architecture
 
