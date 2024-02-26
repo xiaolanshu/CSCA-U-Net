@@ -145,30 +145,20 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 
 ## 5. Citation
 
+```
 @article{shu2024102800,
-
 title = {CSCA U-Net: A channel and space compound attention CNN for medical image segmentation},
-
 journal = {Artificial Intelligence in Medicine},
-
 volume = {150},
-
 pages = {102800},
-
 year = {2024},
-
 issn = {0933-3657},
-
 doi = {https://doi.org/10.1016/j.artmed.2024.102800},
-
 url = {https://www.sciencedirect.com/science/article/pii/S0933365724000423},
-
 author = {Xin Shu and Jiashu Wang and Aoping Zhang and Jinlong Shi and Xiao-Jun Wu},
-
 keywords = {U-net, Channel and spatial compound attention, Cross-layer feature fusion, Deep supervision, Medical image segmentation}
-
 }
-
+```
 
 ## 6. Acknowledge
 
