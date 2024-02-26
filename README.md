@@ -145,6 +145,7 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 
 ## 5. Citation
 
+Please cite our paper if you find the work useful:
 ```
 @article{shu2024102800,
 title = {CSCA U-Net: A channel and space compound attention CNN for medical image segmentation},
