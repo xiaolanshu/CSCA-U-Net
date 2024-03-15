@@ -35,7 +35,7 @@
 
 ### 整体架构
 
-![image-architecture](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/image-20221208100223315.png)
+![image-architecture](docs/pics/architecture.png)
 
 ### Abstract
 
@@ -108,31 +108,32 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 - 之所以使用不同的评估代码，是因为要与在数据集上做实验的其它论文在评估时使用相同的方法。
 
 ## 4. 结果
+
 - Polyp Datasets
-	![20221208101511](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101511.png)
-	
-	![20221208101543](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101543.png)
+  ![20221208101511](docs/pics/table-polyp.png)
+
+  ![20221208101543](docs/pics/table-polyp2.png)
 
 - 2018 DSB
-	![](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101622.png)
+  ![](docs/pics/table-dsb.png)
 
 - ISIC 2018
-	![](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101638.png)
+  ![](docs/pics/table-isic2018.png)
 
 - JSUAH-Cerebellum 
-	![20221208101600](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/20221208101600.png)
+  ![20221208101600](docs/pics/table-jsuah.png)
 
 - Qualitative Results
   
   - Polyp Segmentation 
-  ![display-polyp](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/display-polyp.png)
+  ![display-polyp](docs/pics/display-polyp.png)
   - 2018 DSB
-  ![display-DSB](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/display-DSB.png)
+  ![display-DSB](docs/pics/display-DSB.png)
   - ISIC 2018
-  ![display-ISIC2](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/display-ISIC-comressed.png)
+  ![display-ISIC2](docs/pics/display-ISIC-compressed.jpg)
   - Fetal Ultrasound （Private） 
-  ![display-self](https://picture-for-upload.oss-cn-beijing.aliyuncs.com/img/display-self.png)
-
+  ![display-self](docs/pics/display-self.png)
+  
 ## 5. 引用
 
 如果您觉得这项工作对您有所帮助，请您引用它：
