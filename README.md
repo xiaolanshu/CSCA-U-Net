@@ -36,6 +36,11 @@
 
 **You also can read [Chinese version](docs/README-CN.md)**
 
+Please run to get the code:
+```shell
+git clone --recursive https://github.com/xiaolanshu/CSCA-U-Net.git
+```
+
 ## 1. Overview
 
 ### Papers

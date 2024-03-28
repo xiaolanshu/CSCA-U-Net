@@ -27,6 +27,12 @@
 
 ---
 
+获取完整的代码：
+```shell
+git clone --recursive https://github.com/xiaolanshu/CSCA-U-Net.git
+```
+这将同步`evaldata`文件夹的代码.
+
 ## 1. 概览
 
 ### 论文
