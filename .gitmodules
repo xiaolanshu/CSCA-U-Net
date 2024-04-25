@@ -1,3 +1,3 @@
 [submodule "evaldata"]
 	path = evaldata
-	url = git@github.com:z872845991/evaldata.git
+	url = https://github.com/z872845991/evaldata.git
