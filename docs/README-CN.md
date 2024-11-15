@@ -41,7 +41,7 @@ git clone --recursive https://github.com/xiaolanshu/CSCA-U-Net.git
 
 ### 整体架构
 
-![image-architecture](docs/pics/architecture.png)
+![image-architecture](pics/architecture.png)
 
 ### Abstract
 
@@ -56,19 +56,19 @@ Image segmentation is one of the vital steps in medical image analysis. A large 
 我们在这一章节提供了论文所使用的公共数据集. 
 
 - 息肉数据集 (包括 Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS, and CVC-300.) \[[From PraNet](https://github.com/DengPingFan/PraNet)\]:
-  - Total: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\], \[[Baidu]( https://pan.baidu.com/s/1q5I2e2bbwXdW4evJdCAUpg?pwd=1111)\]
+  - Total: \[[Aliyun](http://118.31.22.118:5244/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\], \[[Baidu]( https://pan.baidu.com/s/1q5I2e2bbwXdW4evJdCAUpg?pwd=1111)\]
   - TrainDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\] 
   - TestDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\]
-- 2018 Data Science Bowl: \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Baidu](https://pan.baidu.com/s/1JUzWDQydjj83GbniRgstOQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
-- ISIC 2018 (原始的图片来自于 \[[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\], 不过我将原本的`.tiff`格式的图片转换成了`.png`): \[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Baidu](https://pan.baidu.com/s/1utewXZ8Rs-X5FbTtzOy7DQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
+- 2018 Data Science Bowl: \[[Aliyun](http://118.31.22.118:5244/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Baidu](https://pan.baidu.com/s/1JUzWDQydjj83GbniRgstOQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
+- ISIC 2018 (原始的图片来自于 [[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\]. I converted the images in `.tiff` format to `.png` format): \[[Aliyun](http://118.31.22.118:5244/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Baidu](https://pan.baidu.com/s/1utewXZ8Rs-X5FbTtzOy7DQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
 
 ###  2.2 训练好的模型
 
-\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/snapshots.zip)\], \[[Baidu](https://pan.baidu.com/s/15QcH5fBU4uU0w-X3xu24cw?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1GvMXm5fehYbMFfC1mV0wHy0rHk_35JUP?usp=share_link)\]
+\[[Aliyun](http://118.31.22.118:5244/Aliyun/CSCAUNet/snapshots.zip)\], \[[Baidu](https://pan.baidu.com/s/15QcH5fBU4uU0w-X3xu24cw?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1GvMXm5fehYbMFfC1mV0wHy0rHk_35JUP?usp=share_link)\]
 
 ### 2.3 训练好的预测图
 
-\[[Aliyun](http://little-shu.com:5244/Aliyun/CSCAUNet/Predict_map.zip)\], \[[Baidu](https://pan.baidu.com/s/1KmCXEPkAx5x1QhEx-Utypg?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1VA6J9k5XdkanpkMh4IuXe6wg0OS0lUxq?usp=sharing)\]
+\[[Aliyun](http://118.31.22.118:5244/Aliyun/CSCAUNet/Predict_map.zip)\], \[[Baidu](https://pan.baidu.com/s/1KmCXEPkAx5x1QhEx-Utypg?pwd=1111)\], \[[Google Drive](https://drive.google.com/drive/folders/1VA6J9k5XdkanpkMh4IuXe6wg0OS0lUxq?usp=sharing)\]
 
 ## 3. 如何运行
 
@@ -97,7 +97,7 @@ sh run_cos.sh ### use CosineAnnealingLR
 python Train.py --model_name CSCAUNet --epoch 121 --batchsize 16 --trainsize 352 --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --lr 0.0001 --train_path $dir/data/TrainDataset --test_path $dir/data/TestDataset/Kvasir/  # you need replace ur truely Datapath to $dir.
 ```
 
-### 3.3 测试模型并生成预测图片
+### 3.3 生成预测图片
 
 如果你使用了`sh` 文件进行训练，它会在训练完成后进行测试。
 
@@ -116,29 +116,29 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 ## 4. 结果
 
 - Polyp Datasets
-  ![20221208101511](docs/pics/table-polyp.png)
+  ![20221208101511](pics/table-polyp.png)
 
-  ![20221208101543](docs/pics/table-polyp2.png)
+  ![20221208101543](pics/table-polyp2.png)
 
 - 2018 DSB
-  ![](docs/pics/table-dsb.png)
+  ![](pics/table-dsb.png)
 
 - ISIC 2018
-  ![](docs/pics/table-isic2018.png)
+  ![](pics/table-isic2018.png)
 
 - JSUAH-Cerebellum 
-  ![20221208101600](docs/pics/table-jsuah.png)
+  ![20221208101600](pics/table-jsuah.png)
 
 - Qualitative Results
   
   - Polyp Segmentation 
-  ![display-polyp](docs/pics/display-polyp.png)
+  ![display-polyp](pics/display-polyp.png)
   - 2018 DSB
-  ![display-DSB](docs/pics/display-DSB.png)
+  ![display-DSB](pics/display-DSB.png)
   - ISIC 2018
-  ![display-ISIC2](docs/pics/display-ISIC-compressed.jpg)
+  ![display-ISIC2](pics/display-ISIC-compressed.jpg)
   - Fetal Ultrasound （Private） 
-  ![display-self](docs/pics/display-self.png)
+  ![display-self](pics/display-self.png)
   
 ## 5. 引用
 
