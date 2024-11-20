@@ -143,7 +143,7 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
   - 2018 DSB
   ![display-DSB](docs/pics/display-DSB.png)
   - ISIC 2018
-  ![display-ISIC2](docs/pics/display-ISIC-compressed.jpg)
+  ![display-ISIC2](docs/pics/display-ISIC2.png)
   - Fetal Ultrasound （Private） 
   ![display-self](docs/pics/display-self.png)
   
