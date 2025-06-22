@@ -116,7 +116,7 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 ### 3.4 Evaluating
 
 - For evaluating the polyp dataset, you can use the `matlab` code in `eval` or use the evaluation code provided by \[[UACANet](https://github.com/plemeri/UACANet)\].
-- For other datasets, you can use the code in [evaldata](https://github.com/z872845991/evaldata/).
+- For other datasets, you can use the code in [evaldata](https://github.com/Tardouse/evaldata/).
 - The reason for using a different evaluation code is to use the same methodology in the evaluation as other papers that did experiments on the dataset.
 
 ## 4. Result

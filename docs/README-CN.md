@@ -110,7 +110,7 @@ python Test.py --train_save CSCAUNet_Kvasir_1e4_bs16_e120_s352 --testsize 352 --
 ### 3.4 评估模型
 
 - 如果是评估息肉数据集，你可以使用`eval`中的`matlab`代码，或者使用 \[[UACANet](https://github.com/plemeri/UACANet)\] 提供的评估代码。
-- 如果是其他的数据集，你可以使用 [evaldata](https://github.com/z872845991/evaldata/) 代码。
+- 如果是其他的数据集，你可以使用 [evaldata](https://github.com/Tardouse/evaldata/) 代码。
 - 之所以使用不同的评估代码，是因为要与在数据集上做实验的其它论文在评估时使用相同的方法。
 
 ## 4. 结果
