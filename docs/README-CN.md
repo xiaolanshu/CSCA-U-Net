@@ -56,11 +56,11 @@ Image segmentation is one of the vital steps in medical image analysis. A large 
 我们在这一章节提供了论文所使用的公共数据集.
 
 - 息肉数据集 (包括 Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS, and CVC-300.) \[[From PraNet](https://github.com/DengPingFan/PraNet)\]:
-  - Total: \[[Aliyun](http://storage.adagopro.shop/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\], \[[Baidu]( https://pan.baidu.com/s/1q5I2e2bbwXdW4evJdCAUpg?pwd=1111)\]
+  - Total: \[[Aliyun](http://storage.adagopro.shop/Aliyun/CSCAUNet/Datasets/Polyp%205%20Datasets.zip)\]
   - TrainDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\] 
-  - TestDataset: \[[Google Drive](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)\]
-- 2018 Data Science Bowl: \[[Aliyun](http://storage.adagopro.shop/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Baidu](https://pan.baidu.com/s/1JUzWDQydjj83GbniRgstOQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
-- ISIC 2018 (原始的图片来自于 [[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\]. I converted the images in `.tiff` format to `.png` format): \[[Aliyun](http://storage.adagopro.shop/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Baidu](https://pan.baidu.com/s/1utewXZ8Rs-X5FbTtzOy7DQ?pwd=1111)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
+  - TestDataset: \[[Google Drive](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view?usp=sharing)\]
+- 2018 Data Science Bowl: \[[Aliyun](http://storage.adagopro.shop/Aliyun/CSCAUNet/Datasets/bowl.zip)\], \[[Google Drive](https://drive.google.com/file/d/1IWoWItLWvj1r2SbJWfBQTyPI0AngEwbb/view?usp=share_link)\]
+- ISIC 2018 (原始的图片来自于 [[kaggle](https://www.kaggle.com/datasets/pengyizhou/isic2018segmentation/download?datasetVersionNumber=1)\]. I converted the images in `.tiff` format to `.png` format): \[[Aliyun](http://storage.adagopro.shop/Aliyun/CSCAUNet/Datasets/ISIC2018.zip)\], \[[Google Drive](https://drive.google.com/file/d/1qSNXHtV526yLLVyayOsA3bSA9LSSPBrQ/view?usp=share_link)\]
 
 ###  2.2 训练好的模型
 
